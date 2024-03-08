@@ -20,4 +20,7 @@ def look(path, phrase):
         else:
             look(path+p+'\\', phrase)
 
-look("..\\hardware\\", sys.argv[1])
+if sys.argv[1] == 'lib':
+    look("..\\libraries\\", sys.argv[2])
+else:
+    look("..\\hardware\\", sys.argv[1])
