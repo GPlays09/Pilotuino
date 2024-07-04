@@ -16,8 +16,9 @@ I've also included the py\search.py which when run from cmd will search recursiv
 
 
 ## Compiling
-Run verify.bat, which will generate all the necessary files required for the Arduino to function, and upon closing the opened cmd window, it cleans up the build directory.
+Run verify.bat, which will generate all the necessary files required for the Arduino to function.
+There is also verify_clean.bat which does the same thing but upon closing the opened cmd window, it cleans up the build directory.
 
 ## Uploading
-Run upload.bat before closing verify.bat's cmd window. The script that is run to handle uploading is py\upload.py. In a nutshell, it functions like this: if there is a device visible in the device manager that fits the usual vid and pid of the Arduino Leonardo and has a COM port open, it will do some stuff required and automatically upload the compiled sketch to your Arduino. If there isn't a device with said criteria, it will look for one for 10 seconds before exiting. If you don't have a COM port enabled and you want the script to upload, simply while it's looking for devices, press the reset button on your Leonardo, i.e., put it into the bootloader.
+Run upload.bat. The script that is run to handle uploading is py\upload.py. In a nutshell, it functions like this: if there is a device visible in the device manager that fits the usual vid and pid of the Arduino Leonardo and has a COM port open, it will do some stuff required and automatically upload the compiled sketch to your Arduino. If there isn't a device with said criteria, it will look for one for 10 seconds before exiting. If you don't have a COM port enabled and you want the script to upload, simply while it's looking for devices, press the reset button on your Leonardo, i.e., put it into the bootloader.
  
